@@ -144,7 +144,7 @@ public class ThemeOverlayController implements CoreStartable, Dumpable {
             OVERLAY_BERRY_BLACK_THEME, // 1: Berry Black
             OVERLAY_AMOLED_BLACK_THEME // 2: Amoled Black
     };
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     private final ThemeOverlayApplier mThemeManager;
     private final UserManager mUserManager;
