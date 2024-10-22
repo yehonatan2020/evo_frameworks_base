@@ -35,7 +35,6 @@ import com.android.systemui.qs.tiles.PreferredNetworkTile
 import com.android.systemui.qs.tiles.ProfilesTile
 import com.android.systemui.qs.tiles.ReadingModeTile
 import com.android.systemui.qs.tiles.RefreshRateTile
-import com.android.systemui.qs.tiles.SoundSearchTile
 import com.android.systemui.qs.tiles.SoundTile
 import com.android.systemui.qs.tiles.SyncTile
 import com.android.systemui.qs.tiles.UsbTetherTile
@@ -158,12 +157,6 @@ interface LineageModule {
     @IntoMap
     @StringKey(RefreshRateTile.TILE_SPEC)
     fun bindRefreshRateTile(refreshRateTile: RefreshRateTile): QSTileImpl<*>
-
-    /** Inject SoundSearchTile into tileMap in QSModule */
-    @Binds
-    @IntoMap
-    @StringKey(SoundSearchTile.TILE_SPEC)
-    fun bindSoundSearchTile(soundSearchTile: SoundSearchTile): QSTileImpl<*>
 
     /** Inject SoundTile into tileMap in QSModule */
     @Binds
